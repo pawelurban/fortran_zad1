@@ -1,0 +1,68 @@
+unset grid
+set terminal png
+set output "wykres4.pdf"
+set key box top left
+set multiplot
+set logscale x
+set logscale y
+set key opaque
+set key box
+set key width 1 height 0.5 font "Arial, 14"
+set style data lines
+set termopt enhanced
+set xlabel "N" font "Arial, 14"
+set ylabel "multiplication time" font "Arial, 14"
+set xtics font "Arial, 14"
+set ytics font "Arial, 14"
+set termoption dashed
+plot "naive4"
+replot "bett4"
+replot "dot4"
+replot "matmul4"
+unset multiplot
+
+unset grid
+set terminal png
+set output "wykres8.pdf"
+set key box top left
+set multiplot
+set logscale x
+set logscale y
+set key opaque
+set key box
+set key width 1 height 0.5 font "Arial, 14"
+set style data lines
+set termopt enhanced
+set xlabel "N" font "Arial, 14"
+set ylabel "multiplication time" font "Arial, 14"
+set xtics font "Arial, 14"
+set ytics font "Arial, 14"
+set termoption dashed
+plot "naive8"
+replot "bett8"
+replot "dot8"
+replot "matmul8"
+unset multiplot
+
+unset grid
+set terminal png
+set output "wykres16.pdf"
+set key box top left
+set multiplot
+set logscale x
+set logscale y
+set key opaque
+set key box
+set key width 1 height 0.5 font "Arial, 14"
+set style data lines
+set termopt enhanced
+set xlabel "N" font "Arial, 14"
+set ylabel "multiplication time" font "Arial, 14"
+set xtics font "Arial, 14"
+set ytics font "Arial, 14"
+set termoption dashed
+plot "naive16"
+replot "bett16"
+replot "dot16"
+replot "matmul16"
+unset multiplot
